@@ -1,15 +1,192 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mi blog de Cocina</title>
 </head>
 
-<body>
+<header>
+  <div class="title">
+      <h1><a href="index.html">Mi Blog de Cocina</a></h1>
+  </div>
+  <nav>
+    <div class="desktopnav">
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="#">
+            Platos
+            <i class="fa fa-caret-down"></i>
+          </a>
+              <ul class="dropdown">
+                <li>
+                  <a href="#">Ensalada</a>
+                </li>
+                <li>
+                  <a href="#">Carne</a>
+                </li>
+                <li>
+                  <a href="#">Helado</a>
+                </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#">Sobre mi</a>
+          </li>
+          <li>
+            <a href="#">Contacto</a>
+          </li>
+        </ul>
+    </div>
+    <div class="mobilenav">
+      <ul>
+        <li>
+          <i class="fas fa-bars"></i>
+            Menú
+              <ul class="dropdown">
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="#">Platos</a>
+                </li>
+                <li>
+                  <a href="#">Sobre mi</a>
+                </li>
+                <li>
+                  <a href="#">Contacto</a>
+                </li>
+              </ul>
+          </li>
+      </ul>
+    </div>
+  </nav>
 
-</body>
+        <!-- <main>
+          <section>
+            <div class="carrousel">
+              <div class="pic">
+                <img src="img/img-1.jpg" alt="taco">
+              </div>
+              <div class="pic">
+                <img src="img/img-2.jpg" alt="tofu">
+              </div>
+              <div class="pic">
+                <img src="img/img-3.jpg" alt="avena">
+              </div>
+              <div class="pic">
+                <img src="img/img-4.jpg" alt="tostada">
+              </div>
+            </div>
+          </section>
+          <div clas="banners">
+            <div class="banner1">
+              <p class="bannerbutton">Platos</p>
+            </div>
+            <div class="banner2">
+              <img src="" alt="">
+            </div>
+            <div class="banner3">
+              <img src="" alt="">
+            </div>
+          </div>
+            <aside>
+            <div class="asidesecond">
+              <div class"video">
+                <video src="">
 
-</html>
+                </video>
+                <div class="date">
+                  <p></p>
+                </div>
+              </div>
+              <div class="profile">
+                <div class"aboutme">
+                  <p>
+                    Sobre mi
+                  </p>
+                </div>
+                <div class="profilepic">
+                  <img src="" alt="">
+                  <div class="titlerecipe">
+                    <h2>Natalia Guida</h2>
+                  </div>
+                  <div class="textrecipe">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Nostrum aperiam ducimus tenetur sequi accusantium odit vitae quos inventore, voluptatem, sapiente distinctio facere officia. Fugit, neque. Ea repellat blanditiis vitae possimus!
+                    </p>
+                  </div>
+                  <div class="buttonnews">
+                    <p>Newsletter</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </aside>
+          <article>
+            <div class="articles">
+              <div class="article">
+                <div class="picart">
+                  <img src="" alt="">
+                </div>
+                <div class="text">
+                  <div class="author">
+                    <p></p>
+                  </div>
+                  <div class="date">
+                    <p></p>
+                  </div>
+                  <div class="socialsharing">
+                    <div class="like">
+
+                    </div>
+                    <div class="comment">
+
+                    </div>
+                    <div class="share">
+
+                    </div>
+                  </div>
+                  <div class="titlerecipe">
+                    <h2>Delicias Dulces</h2>
+                  </div>
+                  <div class="textrecipe">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam dolor fugiat, odit dicta praesentium incidunt eum hic soluta tempore laborum.
+                      Error sequi ipsa omnis dolores deserunt provident odio excepturi! Quod.
+                    </p>
+                  </div>
+                  <button>
+                    <p>Leer más</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </main>
+        <footer>
+          <div class="social">
+            <div class="icon-container">
+                <a href="#" class="link"><i class="fab fa-pinterest"></i></a>
+            </div>
+            <div class="icon-container">
+                <a href="#" class="link"><i class="fab fa-facebook-square"></i></a>
+            </div>
+            <div class="icon-container">
+                <a href="#" class="link"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="icon-container">
+                <a href="#" class="link"><i class="fab fa-google-plus-square"></i></a>
+            </div>
+
+          </div>
+        </footer> -->
+    </header>
