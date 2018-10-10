@@ -1,0 +1,22 @@
+$FontColor: #666;
+
+body {
+  background-color: #fff;
+  font-family: "IBM Plex Mono", monospace;
+  margin: 0;
+  color: $FontColor;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+ a {
+   text-decoration: none;
+   color: #fc784f;
+ }
+
+ p {
+   font-size: 12px;
+ }
