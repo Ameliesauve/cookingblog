@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .title h1 {
   font-family: "Indie Flower", cursive;
   color: #fc784f;
@@ -193,7 +194,7 @@ p {
   width: 80%;
   margin-top: 20px;
 }
-.banners p {
+.banners a {
   background-color: white;
   border-radius: 20px;
   text-align: center;
@@ -201,7 +202,7 @@ p {
   width: 75%;
   padding: 5px;
 }
-.banners p:hover {
+.banners a:hover {
   background-color: #fc784f;
   color: white;
   cursor: pointer;
@@ -500,6 +501,211 @@ hr {
 
   .icon-container p {
     display: none;
+  }
+}
+.banner {
+  width: 100%;
+  height: auto;
+}
+
+.banner img {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.archive {
+  margin: 20px;
+}
+
+.recipeAssets {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.containerIcons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.icon1 {
+  width: 40px;
+  height: 40px;
+  background-color: #3b5998;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20% 0;
+}
+.icon1 p {
+  text-align: center;
+}
+.icon1 .fa-facebook-f {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+.icon2 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #55acee;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20% 0;
+}
+.icon2 p {
+  text-align: center;
+}
+.icon2 .fa-twitter {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+.icon3 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #dd4b39;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20% 0;
+}
+.icon3 p {
+  text-align: center;
+}
+.icon3 .fa-google-plus-g {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+.icon4 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #8f6247;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20% 0;
+}
+.icon4 p {
+  text-align: center;
+}
+.icon4 .fa-instagram {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+.icon5 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #cb2027;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20% 0;
+}
+.icon5 p {
+  text-align: center;
+}
+.icon5 .fa-pinterest-p {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+.recipeContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.recipe-content {
+  font-size: 15px;
+  width: 45%;
+}
+.recipe-content .photoContainer {
+  width: 100%;
+}
+.recipe-content .photoContainer img {
+  border-radius: 14%;
+  padding: 5px;
+}
+.recipe-content .recipe-header h2 {
+  padding: 0 2%;
+  color: black;
+}
+.recipe-content .recipe-header .header-top {
+  display: flex;
+  justify-content: space-between;
+}
+.recipe-content .recipeQuote {
+  border-left: #fa7855 solid 1px;
+  margin: 5% 0;
+  padding: 0 4%;
+}
+.recipe-content .recipeQuote p {
+  color: black;
+}
+.recipe-content .recipeQuote span {
+  text-transform: uppercase;
+}
+
+.icons i {
+  padding: 2px;
+}
+.icons i span {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.ingredients ul {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.ingredients ul li {
+  padding: 1%;
+  text-indent: -0.7em;
+}
+.ingredients ul li::before {
+  content: "• ";
+  color: #fa7855;
+}
+
+@media (max-width: 800px) {
+  .recipe-content {
+    width: 90%;
+  }
+
+  .recipeAssets {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .containerIcons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .containerIcons p {
+    margin: 0;
   }
 }
 

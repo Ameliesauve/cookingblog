@@ -1,0 +1,258 @@
+$font: 'IBM Plex Mono',
+monospace;
+$orange: #fa7855;
+$pink: #fde2da;
+
+@mixin titlesAbout {
+    background-color: #fde2da;
+    font-size: 18px;
+
+    p {
+        margin: 5;
+    }
+}
+
+@mixin socialIcons {
+
+    font-size: 25px;
+    color: white;
+    text-align: center;
+
+}
+
+.archive {
+    margin: 20px;
+}
+
+.recipeAssets {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.containerIcons {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+.icon1 {
+    width: 40px;
+    height: 40px;
+    background-color: #3b5998;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20% 0;
+
+    p {
+        text-align: center;
+    }
+
+    .fa-facebook-f {
+        @include socialIcons ();
+    }
+}
+
+.icon2 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #55acee;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20% 0;
+
+
+    p {
+        text-align: center;
+    }
+
+    .fa-twitter {
+        @include socialIcons ();
+
+    }
+}
+
+.icon3 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #dd4b39;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20% 0;
+
+
+
+    p {
+        text-align: center;
+    }
+
+    .fa-google-plus-g {
+        @include socialIcons ();
+
+    }
+}
+
+.icon4 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #8f6247;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20% 0;
+
+
+
+    p {
+        text-align: center;
+    }
+
+    .fa-instagram {
+        @include socialIcons ();
+
+    }
+}
+
+.icon5 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #cb2027;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20% 0;
+
+
+
+    p {
+        text-align: center;
+    }
+
+    .fa-pinterest-p {
+        @include socialIcons();
+    }
+}
+
+
+.recipeContainer {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.recipe-content {
+    font-size: 15px;
+    width: 45%;
+
+    .photoContainer {
+        width: 100%;
+
+        img {
+
+            border-radius: 14%;
+            padding: 5px;
+        }
+    }
+
+    .recipe-header {
+        h2 {
+            padding: 0 2%;
+            color: black;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .recipeQuote {
+        border-left: $orange solid 1px;
+        margin: 5% 0;
+        padding: 0 4%;
+
+        p {
+            color: black;
+        }
+
+        span {
+            text-transform: uppercase;
+        }
+    }
+}
+
+.icons {
+    i {
+        padding: 2px;
+
+        span {
+            font-family: "IBM Plex Mono", monospace;
+        }
+    }
+}
+
+.ingredients {
+    ul {
+        display: block;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            padding: 1%;
+            text-indent: -.7em;
+        }
+
+        li::before {
+            content: "• ";
+            color: $orange;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+
+    .recipe-content {
+        width: 90%;
+    }
+
+    .recipeAssets {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+
+    .containerIcons {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px;
+        box-sizing: border-box;
+
+        p {
+            margin: 0;
+        }
+
+
+    }
+}
