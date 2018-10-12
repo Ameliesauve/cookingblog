@@ -208,7 +208,7 @@ p {
   cursor: pointer;
 }
 .banners .banner1 {
-  background-image: url("../img/platos.jpeg");
+  background-image: url("../../img/platos.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 30%;
@@ -223,7 +223,7 @@ p {
   cursor: pointer;
 }
 .banners .banner2 {
-  background-image: url("../img/recetas.jpg");
+  background-image: url("../../img/recetas.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 30%;
@@ -234,7 +234,7 @@ p {
   justify-content: center;
 }
 .banners .banner3 {
-  background-image: url("../img/exoticos.jpg");
+  background-image: url("../../img/exoticos.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 30%;
