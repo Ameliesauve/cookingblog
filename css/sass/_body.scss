@@ -5,12 +5,15 @@ $orange: #fc784f;
 .carrousel {
   display: flex;
   justify-content: space-between;
+
   .pic {
     width: 24%;
     position: relative;
+
     &:hover {
       cursor: pointer;
     }
+
     .overlay {
       position: absolute;
       display: flex;
@@ -23,35 +26,41 @@ $orange: #fc784f;
       opacity: 0;
       transition: .5s ease;
       background-color: $lightorange;
+
       &:hover {
         opacity: 1;
         cursor: pointer;
         height: 30%;
       }
+
       .breadcrumb-pic {
         display: flex;
         justify-content: center;
       }
+
       .date {
         color: white;
         display: flex;
         align-items: center;
+
         &:after {
           margin: 0 1px;
           content: '|'
         }
+
         &:last-of-type {
           &::after {
             content: ''
           }
         }
       }
+
       .text-pic {
         display: flex;
         color: white;
         width: 80%;
       }
-     }
+    }
   }
 }
 
@@ -62,19 +71,22 @@ $orange: #fc784f;
   align-items: center;
   width: 80%;
   margin-top: 20px;
-  p {
+
+  a {
     background-color: white;
     border-radius: 20px;
     text-align: center;
     text-transform: uppercase;
     width: 75%;
     padding: 5px;
+
     &:hover {
       background-color: $orange;
       color: white;
       cursor: pointer;
     }
   }
+
   .banner1 {
     background-image: url('../img/platos.jpeg');
     background-repeat: no-repeat;
@@ -85,11 +97,13 @@ $orange: #fc784f;
     display: flex;
     align-items: center;
     justify-content: center;
+
     &:hover {
       opacity: 1.5;
       cursor: pointer;
     }
   }
+
   .banner2 {
     background-image: url('../img/recetas.jpg');
     background-repeat: no-repeat;
@@ -101,6 +115,7 @@ $orange: #fc784f;
     align-items: center;
     justify-content: center;
   }
+
   .banner3 {
     background-image: url('../img/exoticos.jpg');
     background-repeat: no-repeat;
@@ -120,25 +135,31 @@ aside {
   align-items: flex-start;
   width: 80%;
   margin: auto;
+
   .videobox {
     padding-top: 10px;
     width: 70%;
+
     .video {
       .embed-responsive-item {
         width: 100%;
         height: 380px;
         border: none;
       }
+
       .videofooter {
         display: flex;
         font-size: 10px;
+
         .date {
           display: flex;
           align-items: center;
+
           &:after {
             margin: 0 20px;
             content: '|'
           }
+
           &:last-of-type {
             &::after {
               content: ''
@@ -148,11 +169,13 @@ aside {
       }
     }
   }
+
   .profile {
     width: 25%;
     display: flex;
     justify-content: center;
     flex-direction: column;
+
     p.aboutme {
       background-color: $lightorange;
       text-transform: uppercase;
@@ -161,6 +184,7 @@ aside {
       color: #333;
       padding: 5px;
     }
+
     p.newsletter {
       background-color: $lightorange;
       text-transform: uppercase;
@@ -168,18 +192,22 @@ aside {
       text-align: center;
       color: #333;
       padding: 5px;
+
       &:hover {
         background-color: $orange;
         cursor: pointer;
       }
     }
+
     h3 {
       color: #222;
       text-align: center;
     }
+
     p.textprofile {
       text-align: center;
     }
+
     .profilepic img {
       width: 100%;
       height: auto;
@@ -195,32 +223,40 @@ aside {
   margin: auto;
   border-top: 1px solid #e1e1e1;
   margin-top: 20px;
+
   .recipe {
     margin-top: 20px;
     display: flex;
+
     .picart img {
       display: flex;
       border-radius: 20px;
       width: 92%;
     }
+
     .textarticle {
       display: flex;
       flex-direction: column;
       width: 100%;
+
       .breadcrumb {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
         .recipedata {
           display: flex;
           align-items: center;
+
           .author {
             display: flex;
             align-items: center;
+
             &:after {
               margin: 0 5px;
               content: '|'
             }
+
             &:last-of-type {
               &::after {
                 content: ''
@@ -228,9 +264,11 @@ aside {
             }
           }
         }
+
         .socialsharing {
           display: flex;
           align-items: center;
+
           .comment {
             display: flex;
             align-items: center;
@@ -241,32 +279,37 @@ aside {
       }
 
       .readmore {
-          background-color: $lightorange;
-          border-radius: 10px;
-          padding: 1px;
-          width: 150px;
-          text-align: center;
-          a {
-            text-decoration: none;
-            color: #333;
-          }
-          &:hover {
-            background-color: $orange;
-          }
+        background-color: $lightorange;
+        border-radius: 10px;
+        padding: 1px;
+        width: 150px;
+        text-align: center;
+
+        a {
+          text-decoration: none;
+          color: #333;
+        }
+
+        &:hover {
+          background-color: $orange;
         }
       }
     }
   }
+}
 
 @media (max-width: 600px) {
   .carrousel {
     flex-direction: column;
     justify-content: center;
+
     .pic {
       display: none;
+
       .overlay {
         display: none;
       }
+
       &:first-of-type {
         display: flex;
         width: 100%;
@@ -274,6 +317,7 @@ aside {
     }
 
   }
+
   aside {
     .profile {
       width: 100%;
@@ -285,40 +329,51 @@ aside {
     display: flex;
     flex-direction: column-reverse;
   }
+
   .recipe {
     flex-direction: column;
     width: 100%;
+
     .picart {
       display: none;
     }
+
     .article {
       align-items: center;
       display: flex;
       flex-direction: column;
+
       .titlerecipe {
         margin-bottom: 40px;
+
         h3 {
           color: #222;
         }
       }
     }
+
     .textarticle {
       width: 100%;
     }
   }
+
   .videobox {
     display: none;
   }
+
   .banners {
     flex-direction: column;
+
     .banner1 {
       width: 100%;
       margin-bottom: 20px;
     }
+
     .banner2 {
       width: 100%;
       margin-bottom: 20px;
     }
+
     .banner3 {
       width: 100%;
       margin-bottom: 20px;

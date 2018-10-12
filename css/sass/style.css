@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .title h1 {
   font-family: "Indie Flower", cursive;
   color: #fc784f;
@@ -193,7 +194,7 @@ p {
   width: 80%;
   margin-top: 20px;
 }
-.banners p {
+.banners a {
   background-color: white;
   border-radius: 20px;
   text-align: center;
@@ -201,7 +202,7 @@ p {
   width: 75%;
   padding: 5px;
 }
-.banners p:hover {
+.banners a:hover {
   background-color: #fc784f;
   color: white;
   cursor: pointer;
@@ -500,6 +501,221 @@ hr {
 
   .icon-container p {
     display: none;
+  }
+}
+.banner {
+  width: 100%;
+  height: auto;
+}
+
+.banner img {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.archive {
+  margin: 20px;
+}
+
+.socialContainer {
+  width: auto;
+  height: 410px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.socialContainer .photoContainer {
+  width: 53%;
+  height: 100%;
+}
+.socialContainer .photoContainer img {
+  width: auto;
+  border-radius: 10%;
+}
+.socialContainer .containerIcons {
+  width: 8%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon1 {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #3b5998;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.icon1 p {
+  text-align: center;
+}
+.icon1 .fa-facebook-f {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+.icon2 {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #55acee;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.icon2 p {
+  text-align: center;
+}
+.icon2 .fa-twitter {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+.icon3 {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #dd4b39;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.icon3 p {
+  text-align: center;
+}
+.icon3 .fa-google-plus-g {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+.icon4 {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #8f6247;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.icon4 p {
+  text-align: center;
+}
+.icon4 .fa-instagram {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+.icon5 {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #cb2027;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.icon5 p {
+  text-align: center;
+}
+.icon5 .fa-pinterest-p {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+.recipeContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.recipe-content {
+  width: 45%;
+  font-size: 15px;
+}
+.recipe-content .recipe-header h2 {
+  padding: 0 2%;
+  color: black;
+}
+.recipe-content .recipe-header .header-top {
+  display: flex;
+  justify-content: space-between;
+}
+.recipe-content .recipeQuote {
+  border-left: #fa7855 solid 1px;
+  margin: 5% 0;
+  padding: 0 4%;
+}
+.recipe-content .recipeQuote p {
+  color: black;
+}
+.recipe-content .recipeQuote span {
+  text-transform: uppercase;
+}
+
+.icons i {
+  padding: 2px;
+}
+.icons i span {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.ingredients ul {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.ingredients ul li {
+  padding: 1%;
+  text-indent: -0.7em;
+}
+.ingredients ul li::before {
+  content: "• ";
+  color: #fa7855;
+}
+
+@media (max-width: 800px) {
+  .mainRecipeContainer {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mainRecipeContainer .containerIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .mainRecipeContainer .photoContainer {
+    box-sizing: border-box;
+    border-radius: 40px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .mainRecipeContainer .photoContainer img {
+    width: 100%;
+  }
+
+  article {
+    width: 90%;
+    margin: auto;
+  }
+  article .post-details {
+    font-size: 14px;
   }
 }
 
