@@ -1,15 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mi blog de Cocina</title>
 </head>
-
 <body>
-
-</body>
-
+  <header>
+    <div class="title">
+        <h1 id="home"><a href="index.html">Mi Blog de Cocina</a></h1>
+    </div>
+    <nav>
+      <div class="desktopnav">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="#">
+              Platos
+              <i class="fa fa-caret-down"></i>
+            </a>
+                <ul class="dropdown">
+                  <li>
+                    <a href="#">Ensalada</a>
+                  </li>
+                  <li>
+                    <a href="#">Carne</a>
+                  </li>
+                  <li>
+                    <a href="#">Helado</a>
+                  </li>
+                </ul>
+            </li>
+            <li>
+              <a href="#">Sobre mi</a>
+            </li>
+            <li>
+              <a href="#">Contacto</a>
+            </li>
+          </ul>
+      </div>
+      <div class="mobilenav">
+        <ul>
+          <li>
+            <a href="#home">
+              <i class="fas fa-bars"></i>
+              Menú
+            </a>
+                <ul class="dropdown">
+                  <li>
+                    <a href="index.html">Home</a>
+                  </li>
+                  <li>
+                    <a href="#">Platos</a>
+                  </li>
+                  <li>
+                    <a href="#">Sobre mi</a>
+                  </li>
+                  <li>
+                    <a href="#">Contacto</a>
+                  </li>
+                </ul>
+            </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+   <main>
+    <section>
+      <div class="carrousel">
+        <div class="pic">
+          <img src="img/img-1.jpg" alt="taco">
+          <div class="overlay">
+            <div class="breadcrumb-pic">
+              <div class="date">
+                <p>Mayo, 2017</p>
+              </div>
+              <div class="date">
+                <p>7 comentarios</p>
+              </div>
+            </div>
+            <div class="text-pic">
+              <p>"Los mejores tacos del país en pocos pasos"</p>
+            </div>
+          </div>
+        </div>
+        <div class="pic">
+          <img src="img/img-2.jpg" alt="tofu">
+          <div class="overlay">
+            <div class="breadcrumb-pic">
+              <div class="date">
+                <p>Mayo, 2017</p>
+              </div>
+              <div class="date">
+                <p>7 comentarios</p>
+              </div>
+            </div>
+            <div class="text-pic">
+              <p>"Los mejores tacos del país en pocos pasos"</p>
+            </div>
+          </div>
+        </div>
+        <div class="pic">
+          <img src="img/img-3.jpg" alt="avena">
+          <div class="overlay">
+            <div class="breadcrumb-pic">
+              <div class="date">
+                <p>Mayo, 2017</p>
+              </div>
+              <div class="date">
+                <p>7 comentarios</p>
+              </div>
+            </div>
+            <div class="text-pic">
+              <p>"Los mejores tacos del país en pocos pasos"</p>
+            </div>
+          </div>
+        </div>
+        <div class="pic">
+          <img src="img/img-4.jpg" alt="tostada">
+          <div class="overlay">
+            <div class="breadcrumb-pic">
+              <div class="date">
+                <p>Mayo, 2017</p>
+              </div>
+              <div class="date">
+                <p>7 comentarios</p>
+              </div>
+            </div>
+            <div class="text-pic">
+              <p>"Los mejores tacos del país en pocos pasos"</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="banners">
+      <div class="banner1">
+        <p class="bannerbutton">Platos</p>
+      </div>
+      <div class="banner2">
+        <p class="bannerbutton">Recetas</p>
+      </div>
+      <div class="banner3">
+        <p class="bannerbutton">Exóticos</p>
+      </div>
+    </div>
+  <div class="inverse">
+    <aside>
+      <div class="videobox">
+        <div class="video">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2JlnDtLw_AE" allowfullscreen>
+          </iframe>
+          <div class="videofooter">
+            <div class="date">
+              <p>20 de abril</p>
+           </div>
+           <div class="videodescription">
+            <p>¿Como preparar "algo" sin quemar el horno?</p>
+           </div>
+          </div>
+       </div>
+      </div>
+      <div class="profile">
+        <div>
+          <p class="aboutme">
+            Sobre mi
+          </p>
+        </div>
+        <div class="profilepic">
+          <img src="img/catchef.jpg" alt="profilepic">
+          <div class="titlerecipe">
+            <h3>Catchef</h3>
+          </div>
+          <div>
+            <p class="textprofile">
+              Me gustan las anchoas y dormir la siesta. También tengo un blog de cocina.
+            </p>
+          </div>
+          <div>
+            <p class="newsletter">Newsletter</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <article>
+      <div class="recipelist">
+        <div class="recipe">
+          <div class="picart">
+            <img src="img/nota1.jpg" alt="recetapionono">
+          </div>
+          <div class="textarticle">
+            <div class="breadcrumb">
+              <div class="recipedata">
+              <div class="author">
+                <p>By Maria</p>
+              </div>
+              <div class="date">
+                <p>Mayo 2019</p>
+              </div>
+              </div>
+              <div class="socialsharing">
+                <div class="comment">
+                  <i class="far fa-heart"></i>
+                  <p>20</p>
+                </div>
+                <div class="comment">
+                  <i class="far fa-comments"></i>
+                  <p>20</p>
+                </div>
+                <div class="comment">
+                  <i class="fas fa-share-alt"></i>
+                </div>
+              </div>
+          </div>
+          <div class="article">
+            <div class="titlerecipe">
+              <h3>Delicias Dulces</h3>
+            </div>
+            <div class="textrecipe">
+              <p>
+                En esta receta van a poder hacer una comida simple, rica y sana!
+              </p>
+            </div>
+            <div class="readmore">
+              <a href="#"><p>Leer más</p></a>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="recipelist">
+        <div class="recipe">
+          <div class="picart">
+            <img src="img/nota2.jpg" alt="recetasimple">
+          </div>
+          <div class="textarticle">
+            <div class="breadcrumb">
+              <div class="recipedata">
+              <div class="author">
+                <p>By Maria</p>
+              </div>
+              <div class="date">
+                <p>Mayo 2019</p>
+              </div>
+              </div>
+              <div class="socialsharing">
+                <div class="comment">
+                  <i class="far fa-heart"></i>
+                  <p>43</p>
+                </div>
+                <div class="comment">
+                  <i class="far fa-comments"></i>
+                  <p>70</p>
+                </div>
+                <div class="comment">
+                  <i class="fas fa-share-alt"></i>
+                </div>
+              </div>
+          </div>
+          <div class="article">
+            <div class="titlerecipe">
+              <h3>Comidas Simples</h3>
+            </div>
+            <div class="textrecipe">
+              <p>
+                En esta receta van a poder hacer una comida simple, rica y sana!
+              </p>
+            </div>
+            <div class="readmore">
+                <a href="#"><p>Leer más</p></a>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+  </main>
+    <footer>
+      <div class="social">
+        <div class="icon-container">
+            <a href="#" class="link"><i class="fab fa-facebook-square"></i></a>
+            <p>Facebook</p>
+        </div>
+        <div class="icon-container">
+            <a href="#" class="link"><i class="fab fa-twitter"></i></a>
+            <p>Twitter</p>
+        </div>
+        <div class="icon-container">
+            <a href="#" class="link"><i class="fab fa-google-plus-square"></i></a>
+            <p>Google +</p>
+        </div>
+        <div class="icon-container">
+            <a href="#" class="link"><i class="fab fa-linkedin"></i></a>
+            <p>Linkedin</p>
+        </div>
+        <div class="icon-container">
+            <a href="#" class="link"><i class="fab fa-instagram"></i></a>
+            <p>Instagram</p>
+        </div>
+        <div class="icon-container">
+            <a href="#" class="link"><i class="fab fa-youtube"></i></a>
+            <p>YouTube</p>
+        </div>
+      </div>
+      <hr>
+      <div class="arrowtop">
+        <a href="#home"><i class="fas fa-arrow-up"></i></a>
+      </div>
+    </footer>
+  </body>
 </html>
